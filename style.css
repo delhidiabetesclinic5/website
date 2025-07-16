@@ -1,0 +1,560 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.text-gradient {
+  color: #2b7a78;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  text-shadow: 0 2px 8px rgba(106, 130, 251, 0.10), 0 1px 2px rgba(67, 233, 123, 0.08);
+}
+
+/* 🌐 Sexy Glass-style Navbar */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 16px rgba(106, 130, 251, 0.08);
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+/* Navbar Brand (Delhi Diabetic Clinic) */
+.text-accent {
+  color: #2b7a78;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  text-shadow: 0 2px 8px rgba(106, 130, 251, 0.10), 0 1px 2px rgba(67, 233, 123, 0.08);
+}
+
+/* Navbar Links */
+.navbar .nav-link {
+  color: #333;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0.6rem 0;
+  font-weight: 500;
+}
+
+/* Hover & Active Link Style */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #00c9a7 !important;
+  font-weight: 600;
+}
+
+
+
+/* Navbar Toggler (Mobile Button) */
+.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+/* Mobile Dropdown Style */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  }
+}
+
+
+
+.hero-section {
+  position: relative;
+  height: 75vh;
+  background-image: url('https://plus.unsplash.com/premium_photo-1673953509986-9b2bfe934ae5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xpbmljfGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* for parallax scroll effect */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* Slightly less opaque for clarity */
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-elevate {
+  background: #2b7a78;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 8px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+}
+
+.btn-elevate:hover {
+  background: #205e5a;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.15);
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn-gradient {
+  background: #2b7a78;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+}
+
+.btn-gradient:hover {
+  background: #205e5a;
+  transform: scale(1.05);
+}
+
+.about-section {
+  background-color: #f4f6fa;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.glass-box h2 {
+  color: #212529;
+}
+
+.glass-box p,
+.glass-box li {
+  color: #444;
+}
+
+.glass-box ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+.flip-card {
+  perspective: 1000px;
+  height: 260px;
+  box-shadow: 0 4px 24px 0 rgba(106, 130, 251, 0.08), 0 1.5px 6px 0 rgba(67, 233, 123, 0.06);
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(145deg, rgba(0, 201, 167, 0.08), rgba(108, 99, 255, 0.08));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.flip-card:hover .flip-card-back {
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.5);
+}
+
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 201, 167, 0.3);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+form .form-control::placeholder {
+  color: #666;
+}
+
+form .form-control:focus {
+  border-color: #00c9a7;
+  box-shadow: 0 0 0 0.2rem rgba(0, 201, 167, 0.15);
+  background-color: #f8f9fa;
+}
+
+
+.text-glow {
+  color: #2b7a78;
+  text-shadow: 0 2px 8px rgba(106, 130, 251, 0.10), 0 1px 2px rgba(67, 233, 123, 0.08);
+}
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+  transition: all 0.4s ease;
+}
+.testimonial-card:hover {
+  box-shadow: 0 0 30px rgba(0, 245, 195, 0.3);
+  transform: translateY(-3px);
+}
+
+.faq-glass {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+}
+
+
+
+
+
+/* Accordion container glass effect */
+.accordion.faq-glass {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 20px rgba(0, 245, 195, 0.03);
+}
+
+/* Accordion Items */
+.accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+/* Header buttons */
+.accordion-button {
+  background: rgba(255, 255, 255, 0.85);
+  color: #212529;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button.collapsed {
+  background: rgba(255, 255, 255, 0.7);
+  color: #444;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #00c9a7;
+  background: rgba(0, 245, 195, 0.08);
+  box-shadow: none;
+}
+
+/* Arrow color */
+.accordion-button::after {
+  filter: brightness(3);
+}
+
+/* Accordion Body */
+.accordion-body {
+  color: #444;
+  background: rgba(255, 255, 255, 0.7);
+  border-left: 3px solid #00c9a7;
+  padding: 1rem 1.25rem;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer Glow */
+.text-glow {
+  color: #2b7a78;
+  text-shadow: 0 2px 8px rgba(106, 130, 251, 0.10), 0 1px 2px rgba(67, 233, 123, 0.08);
+}
+
+.footer-link {
+  color: #333;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  transition: color 0.3s;
+  text-decoration: none; /* Ensures no underline */
+}
+
+.footer-link:hover {
+  color: #00c9a7;
+  text-decoration: none; /* Also prevents hover underline */
+}
+
+
+.social-icon {
+  font-size: 1.4rem;
+  color: #888;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #00c9a7;
+  transform: scale(1.2);
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 300px;
+  margin-top: 2rem;
+  border: 0;
+  border-top: 3px solid #00c9a7;
+}
+
+.map-box {
+  border: 2px solid rgba(0, 245, 195, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0, 245, 195, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-box:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 30px rgba(0, 245, 195, 0.15);
+}
+
+
+.floating-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #fff;
+  background: radial-gradient(circle at 30% 30%, #00c9a7, #6c63ff);
+  border: none;
+  box-shadow: 0 4px 24px 0 rgba(106, 130, 251, 0.12), 0 1.5px 6px 0 rgba(67, 233, 123, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* WhatsApp-specific */
+.whatsapp-btn {
+  bottom: 90px;
+  background: radial-gradient(circle at 30% 30%, #25d366, #128c7e);
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+}
+
+/* Scroll-to-top-specific */
+.top-btn {
+  display: none;
+}
+.top-btn.show {
+  display: flex;
+}
+.top-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 245, 195, 0.2);
+}
+
+
+
+
+/* Improve section spacing on small screens */
+@media (max-width: 767px) {
+  h1, h2, h3 {
+    font-size: 1.5rem !important;
+  }
+  .hero-section .display-4 {
+    font-size: 2rem !important;
+  }
+  .glass-box,
+  .card,
+  .map-box {
+    margin-bottom: 1.5rem;
+  }
+  .navbar-nav {
+    gap: 1rem;
+  }
+}
+
+/* Smoother AOS load */
+[data-aos] {
+  transition-duration: 0.6s;
+  transition-timing-function: ease-in-out;
+}
+
+
+
+.text-soft {
+  color: #888 !important;
+}
+
+.glass-box {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(0, 245, 195, 0.03);
+  padding: 0;
+}
+.instagram-glass {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.card {
+  box-shadow: 0 4px 24px 0 rgba(106, 130, 251, 0.08), 0 1.5px 6px 0 rgba(67, 233, 123, 0.06);
+}
+
+.flip-card {
+  perspective: 1000px;
+  height: 260px;
+  box-shadow: 0 4px 24px 0 rgba(106, 130, 251, 0.08), 0 1.5px 6px 0 rgba(67, 233, 123, 0.06);
+}
+
+.navbar {
+  box-shadow: 0 2px 16px 0 rgba(106, 130, 251, 0.08), 0 1.5px 6px 0 rgba(67, 233, 123, 0.06);
+}
+
+.footer-section {
+  box-shadow: 0 -2px 16px 0 rgba(106, 130, 251, 0.08), 0 -1.5px 6px 0 rgba(67, 233, 123, 0.06);
+}
+
+.btn, .btn-elevate, .btn-gradient {
+  box-shadow: 0 2px 8px 0 rgba(106, 130, 251, 0.10), 0 1.5px 6px 0 rgba(67, 233, 123, 0.08);
+}
+
+
+/* Sexy AF Swiper gallery */
+.swiper {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0 12px 32px rgba(106, 130, 251, 0.12), 0 3px 12px rgba(67, 233, 123, 0.08);
+}
+
+.swiper-slide {
+  padding: 10px;
+}
+
+.gallery-multi-img {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-multi-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 245, 195, 0.3);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #2b7a78;
+  transition: transform 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1.2);
+  color: #00c9a7;
+}
+
