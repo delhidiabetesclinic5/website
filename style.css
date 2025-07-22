@@ -418,7 +418,7 @@ form .form-control:focus {
   border-radius: 50%;
   font-size: 1.6rem;
   color: #fff;
-  background: radial-gradient(circle at 30% 30%, #00c9a7, #6c63ff);
+  background: #2b7a78;
   border: none;
   box-shadow: 0 4px 24px 0 rgba(106, 130, 251, 0.12), 0 1.5px 6px 0 rgba(67, 233, 123, 0.10);
   display: flex;
@@ -432,10 +432,21 @@ form .form-control:focus {
 /* WhatsApp-specific */
 .whatsapp-btn {
   bottom: 90px;
-  background: radial-gradient(circle at 30% 30%, #25d366, #128c7e);
-  box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+  background: #25d366;
+  box-shadow: 0 0 15px rgba(37, 0, 102, 0.2);
 }
 .whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+}
+/* contact-specific */
+.contact-btn {
+  bottom: 90px;
+  background: #2b7a78;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.2);
+  text-decoration: none;
+}
+.contact-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
 }
@@ -449,7 +460,6 @@ form .form-control:focus {
 }
 .top-btn:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 25px rgba(0, 245, 195, 0.2);
 }
 
 
@@ -560,6 +570,18 @@ form .form-control:focus {
 .swiper-button-next:hover {
   transform: scale(1.2);
   color: #00c9a7;
+}
+
+.sticky-book-btn {
+  position: sticky;
+  top: 450px; /* Sticks to top of viewport */
+  z-index: 1000;
+  background-color: #0c625c; /* Optional override */
+  color: white;
+  display: inline-block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 
