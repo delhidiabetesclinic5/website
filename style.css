@@ -584,6 +584,10 @@ form .form-control:focus {
   transition: all 0.3s ease;
 }
 
-
+@media (max-width: 370px){
+  .logo-image{
+    display:none;
+  }
+}
 
 
