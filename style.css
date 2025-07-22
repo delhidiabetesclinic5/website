@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -7,6 +9,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f8f9fa;
   color: #212529;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .text-gradient {
@@ -557,4 +561,7 @@ form .form-control:focus {
   transform: scale(1.2);
   color: #00c9a7;
 }
+
+
+
 
